@@ -10,23 +10,21 @@
 
 
      <body>
-       <p id="userinput">
-        Welcome to my project. Type cheese in the field below and click the button!. (don't type that)</p>
+       <p id="userinput"> Welcome to my project. Type cheese in the field below and click the button!. (don't type that)</p>
         <input type="text" id="inputtext">
         <button class="my button" onclick="entertext()">Hello please click me</button>
-      
      <script>
       function entertext()
       {
          var text = window.prompt("Did you type cheese? Y/N (caps matter)");
 
-        if (inputtext== N) {
+        if (text== "N") {
 
-          window.alert("So, you typed  "+ text)
+          window.alert("So, you are a good person.");
 }
-else if (inputtext== Y) {
+else if (text== "Y") {
 
-  window.alert("You committed a crime.")
+  window.alert("You committed a crime.");
 }
 }
 
