@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+                src="https://code.jquery.com/jquery-3.5.1.min.js"
+   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+   crossorigin="anonymous">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p> Enter in three numbers and have the average be found </p>
+    <form id="myForm">
+      First number: <input type="number" id="one"><br>
+      Second number: <input type="number" id="two"><br>
+      Third number: <input type="number" id="three"><br>
+    </form>
+    <input type="button" class="inputinfo" id="mybutton" value="Calculate my numbers" />
+    <script>
+    $("#mybutton").click(function()
+    {
+  var one = $("#one").val();
+  var two =  $("#two").val();
+  var three =  $("#three").val();
+  var divide = 3
+   var result = (one + two +  three)/divide;
+window.alert("result is " + result);
+})
+  </script>
+  </body>
+</html>
